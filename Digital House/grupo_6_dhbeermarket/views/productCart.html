@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dHBeerMarket</title>
+    <link rel="icon" type="image/png" href="../images/favicon01.png">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-content">
+                <div id="nav-logo">
+                    <img src="../images/logoNav2.png" alt="prueba" width="150px">
+                </div>
+                <div id="nav-nacional">
+                    <a class="nav-link" href=""><p>Nacional</p></a>
+                </div>
+                <div id="nav-importada">
+                    <a class="nav-link" href=""><p>Importada</p></a>
+                </div>
+                <div id="nav-menu">
+                    <form action="/form.result.php" method="POST">
+                        <input type="search" name="busqueda" placeholder="Buscar producto">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div id="nav-carrito">                    
+                    <a class="nav-link" href=""><i class="fa-solid fa-cart-shopping fa-beat-fade"style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;" ></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="carrito-container">
+            <div class="items-carrito-container">
+              <h3>Tu carrito</h3>
+   
+                <article class="item-carrito">
+                <div class="producto">
+                  <img
+                    class="producto-imagen"
+                    src=""
+                    alt=""
+                  />
+                  <div class="producto-texto">
+                    <h4>Cerveza Rubia</h4>
+                    <div class="producto-detalles">
+                      <div>
+                        <h5 class="producto-precio-texto">Precio unidad:</h5>
+                        <h5 class="producto-cantidad">Cantidad:</h5>
+                        <h5 class="producto-subtotal-texto">Subtotal:</h5>
+                      </div>
+                      <div>
+                        <p class="producto-precio">$100</p>
+                        <div class="producto-boton-cantidad">
+                          <button>-</button>
+                          <span>1</span>
+                          <button>+</button>
+                        </div>
+                        <p class="producto-subtotal">$100</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="producto-boton-eliminar">
+                  <i class="fa-solid fa-trash-can"></i>
+                  Quitar del carrito
+                </button>
+              </article>
+
+              <article class="item-carrito">
+                <div class="producto">
+                  <img
+                    class="producto-imagen"
+                    src=""
+                    alt=""
+                  />
+                  <div class="producto-texto">
+                    <h4>Cerveza Roja</h4>
+                    <div class="producto-detalles">
+                      <div>
+                        <h5 class="producto-precio-texto">Precio unidad:</h5>
+                        <h5 class="producto-cantidad">Cantidad:</h5>
+                        <h5 class="producto-subtotal-texto">Subtotal:</h5>
+                      </div>
+                      <div>
+                        <p class="producto-precio">$150</p>
+                        <div class="producto-boton-cantidad">
+                          <button>-</button>
+                          <span>1</span>
+                          <button>+</button>
+                        </div>
+                        <p class="producto-subtotal">$150</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="producto-boton-eliminar">
+                  <i class="fa-solid fa-trash-can"></i>
+                  Quitar del carrito
+                </button>
+              </article>
+              
+              <article class="item-carrito">
+                <div class="producto">
+                  <img
+                    class="producto-imagen"
+                    src=""
+                    alt=""
+                  />
+                  <div class="producto-texto">
+                    <h4>Cerveza Negra</h4>
+                    <div class="producto-detalles">
+                      <div>
+                        <h5 class="producto-precio-texto">Precio unidad:</h5>
+                        <h5 class="producto-cantidad">Cantidad:</h5>
+                        <h5 class="producto-subtotal-texto">Subtotal:</h5>
+                      </div>
+                      <div>
+                        <p class="producto-precio">$200</p>
+                        <div class="producto-boton-cantidad">
+                          <button>-</button>
+                          <span>1</span>
+                          <button>+</button>
+                        </div>
+                        <p class="producto-subtotal">$200</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="producto-boton-eliminar">
+                  <i class="fa-solid fa-trash-can"></i>
+                  Quitar del carrito
+                </button>
+              </article>
+              
+            </div>
+            <div class="resumen-compra-container">
+              <h3>Resumen de Compra</h3>
+              <div class="subtotal-container">
+                <div>
+                  <h5>Subtotal</h5>
+                  <h5>Envío</h5>
+                </div>
+                <div>
+                  <p>$450</p>
+                  <p>$300</p>
+                </div>
+              </div>
+              <div class="total-container">
+                <h4>Total a pagar</h4>
+                <p>$750</p>
+              </div>
+              <button class="boton-pagar">Pagar</button>
+            </div>
+          </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div id="footer-logo"><img src="../images/logoFooter.png" alt="dhBeerMarketLogo" width="150px"> </div>
+            <div class="footer-text">
+                <a class="footer-link" href="/"><p>Home</p></a>
+                <a class="footer-link" href=""><p>Sobre Nosotros</p></a>
+                <a class="footer-link" href=""><p>Contacto</p></a><br>
+            </div>
+            <div class="footer-enlacesSuscrpcion">
+                <p>Suscribite a nuestro newsletter</p>
+                <div class="footer-suscripcion">
+                    <form action="/register" method="POST">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Correo">
+                        <button type="submit">Suscribirme</button>
+                    </form>
+                </div><br>
+                <div class="footer-social-media">
+                    <a class="footer-link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="footer-link" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="footer-link" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div><br>
+        
+        <p>Copyright © dhBeerMarket</p>
+    </footer>
+</body>
+</html>
